@@ -6,10 +6,11 @@ import herobg from "../images/hero-background.png"
 import { BackgroundBeams } from "./ui/background-beams";
 import Link from 'next/link';
 
+
 const Hero = () => {
   return (
     <div  className='relative bg-black min-h-[43rem] flex justify-center items-center flex-row'>
-      <div className='absolute -z-0 opacity-30'>
+      <div className='absolute -z-0 opacity-30 h-full w-full'>
       <Image src={herobg} alt='hero-images' className='h-full w-full '></Image>
      
       </div>
@@ -28,6 +29,7 @@ const Hero = () => {
             </div>
             <div className='h-30rem w-[40%] '>
                     <Image src={manlogo} alt='hero-images' className='h-[90%] w-[25%] absolute bottom-0 right-20 '></Image>
+                    
                     
             </div>
         </div>
